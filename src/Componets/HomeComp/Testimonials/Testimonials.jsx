@@ -1,4 +1,4 @@
-import dhruv from "../../../assets/HomeCompImg/dhruv.png";
+import dhruv from "../../../assets/HomeCompImg/Dhruv.png";
 import { AiFillGoogleCircle } from "react-icons/ai";
 import { MdFacebook } from "react-icons/md";
 import { RiWhatsappFill } from "react-icons/ri";
