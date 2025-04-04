@@ -1,4 +1,4 @@
-import Heroimg from "../../../assets/HomeCompImg/coffee.png";
+import Heroimg from "../../../assets/HomeCompImg/Coffee.png";
 import Heroimg2 from "../../../assets/HomeCompImg/Bnans.png";
 import HeroBg from "../../../assets/HomeCompImg/HomeBg.png";
 import Bnans from "../../../assets/HomeCompImg/Bnanss.png";
