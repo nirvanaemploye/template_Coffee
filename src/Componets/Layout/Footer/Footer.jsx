@@ -3,12 +3,13 @@ import { AiFillGoogleCircle, AiFillTwitterCircle } from "react-icons/ai";
 import { IoMdCall } from "react-icons/io";
 import { MdEmail, MdFacebook, MdKeyboardArrowRight, MdLocationOn } from "react-icons/md";
 import { RiWhatsappFill } from "react-icons/ri";
+import { Link } from "react-router";
 
-const FooterLinks = [
+const menus = [
   { id: 1, name: "Home", link: "/home" },
-    { id: 2, name: "About", link: "/about" },
-    { id: 3, name: "Services", link: "/services" },
-    { id: 4, name: "Contact Us", link: "/contact" },
+  { id: 2, name: "About", link: "/about" },
+  { id: 3, name: "Services", link: "/services" },
+  { id: 4, name: "Contact Us", link: "/contact" },
 ];
 
 const bgImage = {
@@ -45,16 +46,16 @@ const Footer = () => {
             <h1 className="xl:text-3xl text-2xl font-bold text-primary">EXPLORE</h1>
             <div className="">
               <ul className="lg:space-y-8 space-y-4">
-                {FooterLinks.map((data, index) => (
-                  <li key={index} className="flex gap-x-2 hover:text-primary duration-300">
+                {menus.map((data) => (
+                  <li key={data.id} className="flex gap-x-2 hover:text-primary duration-300">
                     <span className="text-3xl"><MdKeyboardArrowRight />
                     </span>
-                    <a
+                    <Link
                       href={data.link}
                       className="uppercase lg:text-xl font-medium "
                     >
                       {data.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
