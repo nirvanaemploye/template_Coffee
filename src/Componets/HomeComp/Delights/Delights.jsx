@@ -2,8 +2,8 @@ import top from "../../../assets/HomeCompImg/DelightsImg/Top.png";
 import bottom from "../../../assets/HomeCompImg/DelightsImg/Bottom.png";
 import BaseLine from "../../Layout/BaseLine";
 import List1 from "../../../assets/HomeCompImg/DelightsImg/list1.png";
-import List2 from "../../../assets/HomeCompImg/DelightsImg/list2.png";
-import List3 from "../../../assets/HomeCompImg/DelightsImg/list3.png";
+import List2 from "../../../assets/HomeCompImg/DelightsImg/List2.png";
+import List3 from "../../../assets/HomeCompImg/DelightsImg/List3.png";
 import PrimaryButton from "../../Layout/PrimaryButton";
 
 const products = [
