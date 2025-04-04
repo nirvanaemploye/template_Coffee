@@ -3,11 +3,8 @@ import { Link } from "react-router-dom"; // Import Link
 import logo from "../../../assets/Logo.png";
 import ShopLogo from "../../../assets/OrderLogo.png";
 import PrimaryButton from "../PrimaryButton";
-import { MdMenu } from "react-icons/md";
 import { useState } from "react";
 import ResponsiveMenu from "./ResponsiveMenu";
-import { IoIosMenu } from "react-icons/io";
-import { CiMenuKebab } from "react-icons/ci";
 import { CgMenuOreos } from "react-icons/cg";
 
 const Navbar = ({ children, className = "" }) => {
