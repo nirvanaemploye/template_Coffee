@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaPlus, FaMinus, FaTimes } from "react-icons/fa";
 import List1 from "../../../assets/HomeCompImg/DelightsImg/list1.png";
-import List2 from "../../../assets/HomeCompImg/DelightsImg/list2.png";
+import List2 from "../../../assets/HomeCompImg/DelightsImg/List2.png";
 
 const AddToCart = () => {
   const [cartItems, setCartItems] = useState([
