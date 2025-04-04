@@ -4,7 +4,7 @@ import CircalIn from "../../../assets/HomeCompImg/HowMade/Ellipse1.png";
 import CoffeeCup from "../../../assets/HomeCompImg/HowMade/CoffeeCup.png";
 import Made1 from "../../../assets/HomeCompImg/HowMade/coffeemachine.png";
 import Made2 from "../../../assets/HomeCompImg/HowMade/coff.png";
-import Made3 from "../../../assets/logo.png";
+import Made3 from "../../../assets/Logo.png";
 import Made4 from "../../../assets/HomeCompImg/HowMade/HeandBnans.png";
 import BaseLine from "../../Layout/BaseLine";
 import { motion } from "motion/react";
