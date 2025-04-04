@@ -50,12 +50,12 @@ const Footer = () => {
                   <li key={data.id} className="flex gap-x-2 hover:text-primary duration-300">
                     <span className="text-3xl"><MdKeyboardArrowRight />
                     </span>
-                    <a
-                      href={data.link}
+                    <Link
+                      to={data.link}
                       className="uppercase lg:text-xl font-medium "
                     >
                       {data.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
