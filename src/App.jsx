@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Navbar from "./Componets/Layout/Navbar/Navbar";
 import Home from "./Componets/HomeComp/Hero/Home";
 import Testimonials from "./Componets/HomeComp/Testimonials/Testimonials";
 import Footer from "./Componets/Layout/Footer/Footer";
@@ -23,27 +22,28 @@ import NewsOffers from "./Componets/ServiceComp/NewsOffers/NewsOffers";
 import Address from "./Componets/ServiceComp/Address/Address";
 import WhatWeOffer from "./Componets/ServiceComp/WhatWeOffer/WhatWeOffer";
 import AddToCart from "./Componets/OrderComp/AddToCart/AddToCart";
-import { CartProvider } from './context/CartContext';
-import Order from './pages/Order';
-
-
-
+import { CartProvider } from "./context/CartContext";
+// import Order from "./pages/Order";
 
 const App = () => {
   useEffect(() => {
-    AOS.init({ offset: 80, duration: 500, easing: "ease-in", delay: 200 , once: true });
+    AOS.init({
+      offset: 80,
+      duration: 500,
+      easing: "ease-in",
+      delay: 200,
+      once: true,
+    });
   }, []);
 
   return (
     <CartProvider>
       <div className="overflow-x-hidden ">
         <BrowserRouter>
-        
           <Routes>
             {/* Default Route */}
-            
+
             <Route path="/" element={<Navigate to="/home" />} />
-            
 
             {/* Home Page */}
             <Route
@@ -65,11 +65,11 @@ const App = () => {
               path="/about"
               element={
                 <>
-                  <AboutHero/>
+                  <AboutHero />
                   <OurMission />
-                  <Gallery/>
-                  <Speciality/>
-                  <SalesPoints/>
+                  <Gallery />
+                  <Speciality />
+                  <SalesPoints />
                 </>
               }
             />
@@ -80,9 +80,9 @@ const App = () => {
               element={
                 <>
                   <ServiceHero />
-                  <WhatWeOffer/>
-                  <Address/>
-                  <NewsOffers/>
+                  <WhatWeOffer />
+                  <Address />
+                  <NewsOffers />
                 </>
               }
             />
@@ -92,8 +92,7 @@ const App = () => {
               element={
                 <>
                   <ContactUsHero />
-                  <KeepInTouch/>
-
+                  <KeepInTouch />
                 </>
               }
             />
@@ -103,14 +102,14 @@ const App = () => {
               element={
                 <>
                   <OrderHero />
-                  <AddToCart/>
+                  <AddToCart />
                 </>
               }
             />
-            <Route path="/order" element={<Order />} />
+            {/* <Route path="/order" element={<Order />} /> */}
           </Routes>
+        <Footer />
         </BrowserRouter>
-        <Footer/>
       </div>
     </CartProvider>
   );

@@ -6,8 +6,10 @@ export default {
   ],  theme: {
     extend: {
       fontFamily:{
-        sans:["Poppons","sans-serif"],
+        custom: ["MyCustomFont", "sans-serif"],
+        openSans: ["Open Sans", "sans-serif"],
         cursive:["Pacifico", "serif"]
+
       },
       colors:{
         primary:"#BE9D7B",

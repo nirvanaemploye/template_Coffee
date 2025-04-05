@@ -52,7 +52,7 @@ const Navbar = ({ children, className = "" }) => {
                     to={data.link}
                     className={`inline-block text-xl py-1 px-4 ${
                       isHomePage ? "hover:text-black" : "hover:text-primary"
-                    } text-white duration-300 relative group`}
+                    } text-white duration-300 relative group font-bold`}
                   >
                     <samp className={`absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-primary group-hover:w-2/6 ${isHomePage ? "bg-white" : "bg-primary"}`}></samp>
                     <samp className={`absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-primary group-hover:w-2/6 ${isHomePage ? "bg-white" : "bg-primary"}`}></samp>

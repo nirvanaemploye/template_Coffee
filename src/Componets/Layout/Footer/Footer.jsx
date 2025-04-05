@@ -3,7 +3,7 @@ import { AiFillGoogleCircle, AiFillTwitterCircle } from "react-icons/ai";
 import { IoMdCall } from "react-icons/io";
 import { MdEmail, MdFacebook, MdKeyboardArrowRight, MdLocationOn } from "react-icons/md";
 import { RiWhatsappFill } from "react-icons/ri";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 const menus = [
   { id: 1, name: "Home", link: "/home" },
@@ -50,12 +50,12 @@ const Footer = () => {
                   <li key={data.id} className="flex gap-x-2 hover:text-primary duration-300">
                     <span className="text-3xl"><MdKeyboardArrowRight />
                     </span>
-                    <a
-                      href={data.link}
+                    <Link
+                      to={data.link}
                       className="uppercase lg:text-xl font-medium "
                     >
                       {data.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
