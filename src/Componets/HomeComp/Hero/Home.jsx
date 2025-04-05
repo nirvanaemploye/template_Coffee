@@ -64,7 +64,7 @@ const Home = () => {
               data-aos="zoom"
               src={Heroimg}
               alt="Coffee Cup"
-              className="mx-auto spin p-18"
+              className="mx-auto spin p-10"
             />
             <img
               data-aos="zoom-in-left"

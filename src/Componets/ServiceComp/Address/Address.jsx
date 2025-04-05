@@ -32,7 +32,7 @@ const Address = () => {
               <p> +126-798-756</p>
               <p>coffeecafe@example.com</p>
             </div>
-            <PrimaryButton className="border border-primary hover:bg-transparent hover:text-primary">
+            <PrimaryButton className="border border-primary group-hover:bg-transparent hover:text-black">
               Contact Us
             </PrimaryButton>
           </div>
@@ -52,7 +52,7 @@ const Address = () => {
               <p>66 Dennie Road, Behind </p>
               <p>Starbucks , VJ City, Paris, 5010</p>
             </div>
-            <PrimaryButton className="border border-primary hover:bg-transparent hover:text-primary">
+            <PrimaryButton className="border border-primary hover:bg-transparent hover:text-black">
               Get Direction
             </PrimaryButton>
           </div>
@@ -72,7 +72,7 @@ const Address = () => {
               <p>Everyday: From 10:00 To 12:00</p>
               <p>Kitchen Closes At 11:00</p>
             </div>
-            <PrimaryButton className="border border-primary hover:bg-transparent hover:text-primary">
+            <PrimaryButton className="border border-primary hover:bg-transparent hover:text-black">
               Reserve a Table
             </PrimaryButton>
           </div>
