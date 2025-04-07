@@ -30,9 +30,9 @@ const Navbar = ({ children, className = "" }) => {
               to="/home"
               className={`font-bold ${
                 isHomePage ? "text-black" : "text-white"
-              } sm:text-xl lg:text-2xl flex justify-center items-baseline gap-2 tracking-wider`}
+              } sm:text-2xl lg:text-3xl flex justify-center items-baseline gap-2 tracking-wider`}
             >
-              <img src={logo} alt="logo" className="lg:w-10 w-7" />
+              <img src={logo} alt="logo" className="lg:w-8 w-7" />
               Coffee Cafe
             </Link>
           </div>
