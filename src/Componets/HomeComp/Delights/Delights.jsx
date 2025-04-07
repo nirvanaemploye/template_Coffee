@@ -43,6 +43,40 @@ const products = [
     image: List2,
     sale: true,
   },
+  {
+    id: 5,
+    name: "Coffee Kettle",
+    description: "Premium coffee kettle",
+    price: "$40",
+    image: List3,
+    sale: false,
+  },
+  {
+    id: 6,
+    name: "Indian Coffee",
+    description: "Rich & aromatic",
+    oldPrice: "$50",
+    price: "$40",
+    image: List2,
+    sale: true,
+  },
+  {
+    id: 7,
+    name: "Coffee Machine",
+    description: "Top-quality brewing",
+    price: "$40",
+    image: List1,
+    sale: false,
+  },
+  {
+    id: 8,
+    name: "Deluxe Coffee",
+    description: "Smooth & flavorful",
+    oldPrice: "$50",
+    price: "$40",
+    image: List2,
+    sale: true,
+  },
 ];
 
 // Slick Slider Settings
@@ -51,13 +85,16 @@ const settings = {
   infinite: true,
   speed: 700,
   slidesToShow: 4,
-  slidesToScroll: 1,
+  slidesToScroll: 2, // Scrolls 2 slides at a time for better UX
+  autoplay: true, // Enables auto-sliding
+  autoplaySpeed: 3000, // Slides every 3 seconds
   responsive: [
-    { breakpoint: 1280, settings: { slidesToShow: 3, slidesToScroll: 1 } },
+    { breakpoint: 1280, settings: { slidesToShow: 3, slidesToScroll: 2 } },
     { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1 } },
     { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } },
   ],
 };
+
 
 const Delights = () => {
   return (
