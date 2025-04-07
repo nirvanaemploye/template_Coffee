@@ -149,7 +149,7 @@ const Delights = () => {
 
                   {/* Product Details */}
                   <div className="p-4 text-center space-y-4">
-                    <h3 className="text-xl font-semibold transition-transform duration-300 group-hover:scale-105">
+                    <h3 className="text-xl font-semibold transition-transform duration-300 ">
                       {product.name}
                     </h3>
                     <p className="text-black/50 tracking-widest leading-5 text-sm">
@@ -157,7 +157,7 @@ const Delights = () => {
                     </p>
 
                     {/* Pricing */}
-                    <div className="mt-2 text-2xl font-bold text-red-600 group-hover:scale-110 transition-transform duration-300">
+                    <div className="mt-2 text-2xl font-bold text-red-600 transition-transform duration-300">
                       {product.oldPrice && (
                         <span className="text-black/20 line-through mr-2">
                           {product.oldPrice}
