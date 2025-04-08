@@ -16,7 +16,7 @@ const AboutHero = () => {
       <Navbar/>
       <div data-aos="fade-up" className="container py-24">
         <div className="flex flex-col items-center space-y-8">
-          <h1 className="font-bold text-4xl sm:text-6xl md:text-8xl uppercase lg:pb-6 text-white">About us</h1>
+          <h1 className="font-bold text-4xl sm:text-6xl md:text-8xl uppercase lg:pb-3 text-white">About us</h1>
           <BaseLine/>
           <PrimaryButton className="text-white">Read More</PrimaryButton>
         </div>

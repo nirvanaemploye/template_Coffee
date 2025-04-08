@@ -21,7 +21,7 @@ const Address = () => {
             data-aos="zoom-in"
             className="lg:border-e border-dashed border-white/70 font-thin flex flex-col items-center justify-center space-y-8 tracking-widest"
           >
-            <p className="flex flex-col items-center text-2xl uppercase tracking-widest font-extralight text-primary">
+            <p className="flex flex-col items-center text-2xl uppercase tracking-widest font-semibold text-primary">
               {" "}
               <span>
                 <IoCallOutline className=" text-primary text-8xl font-extralight mb-6" />
@@ -41,10 +41,10 @@ const Address = () => {
             data-aos="zoom-in"
             className="font-thin flex flex-col items-center justify-center space-y-8 tracking-widest "
           >
-            <p className="flex flex-col items-center text-2xl uppercase tracking-widest font-extralight text-primary">
+            <p className="flex flex-col items-center text-2xl uppercase tracking-widest font-semibold text-primary">
               {" "}
               <span>
-                <IoLocationOutline className=" text-primary text-8xl font-extralight mb-6" />
+                <IoLocationOutline className=" text-primary text-8xl font-semibold mb-6 " />
               </span>
               ADDRESS
             </p>
@@ -61,7 +61,7 @@ const Address = () => {
             data-aos="zoom-in"
             className="lg:border-s border-dashed border-white/70 font-thin flex flex-col items-center justify-center space-y-8 tracking-widest"
           >
-            <p className="flex flex-col items-center text-2xl uppercase tracking-widest font-extralight text-primary">
+            <p className="flex flex-col items-center text-2xl uppercase tracking-widest font-semibold text-primary">
               {" "}
               <span>
                 <CiClock2 className=" text-primary text-8xl font-extralight mb-6" />

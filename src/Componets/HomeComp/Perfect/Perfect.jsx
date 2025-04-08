@@ -55,7 +55,7 @@ const Perfect = () => {
           </p>
 
           {/* Coffee Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 xl:gap-10 pt-6 container">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pt-6 container">
             {PerfectCupList.map((data) => (
               <div
                 data-aos="zoom-in"
