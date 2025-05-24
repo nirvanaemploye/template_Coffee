@@ -5,7 +5,7 @@ import { FaPlus, FaMinus } from "react-icons/fa";
 import { useState } from 'react';
 
 const WhatWeOffer = () => {
-  const [activeSection, setActiveSection] = useState('dining');
+  const [activeSection, setActiveSection] = useState('');
 
   const sections = {
     dining: {
@@ -47,6 +47,7 @@ const WhatWeOffer = () => {
                 accumsan.
               </p>
             </div>
+            {/*  */}
             <div data-aos="fade-down" className="smleading-9 tracking-widest sm:text-lg">
               <div className="py-5">
                 <h1 

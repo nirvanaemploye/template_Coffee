@@ -65,9 +65,19 @@ const SalesPoints = () => {
               </div>
             </div>
           </div>
-          <div data-aos="zoom-out" className="flex justify-center items-center  ">
-            <img src={MapImg} alt="" className="w-11/12"/>
-          </div>
+          <div className="flex justify-center items-center w-full">
+  <div className="w-full max-w-4xl aspect-video">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3730.3223539722326!2d73.06192229999999!3d20.778242799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0ed0065bf26a3%3A0xac5127c2ebe92f7c!2sOne%20more%20cafe!5e0!3m2!1sen!2sin!4v1748066087553!5m2!1sen!2sin"
+      className="w-full h-full"
+      style={{ border: 0 }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    />
+  </div>
+</div>
+
         </div>
       </div>
     </section>

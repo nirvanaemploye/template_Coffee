@@ -47,16 +47,16 @@ const Speciality = () => {
         </div>
 
         {/* Products Grid */}
-        <div className="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-10">
+        <div className="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-10">
           {products.map((product) => (
-            <div data-aos="zoom-in" key={product.id} className="sm:p-5 hover:shadow-md  group">
+            <div data-aos="zoom-in" key={product.id} className="sm:p-5 hover:shadow-lg duration-300 translation group">
               {/* Product Image */}
               <div className="bg-gray-100 flex justify-center aspect-w-1 aspect-h-1 h-64 w-full p-5">
-                <img src={product.image} alt={product.name} className="flex m-8 max-h-full object-contain group-hover:scale-110 duration-300 translation" />
+                <img src={product.image} alt={product.name} className="flex m-8 max-h-full object-contain group-hover:scale-110 duration-300 ease-in-out translation" />
               </div>
               
               {/* Product Info */}
-              <div className="text-left space-y-6 py-6 ">
+              <div className="text-left space-y-4 py-4 ">
                 <p className="font-bold text-xl">{product.name}</p>
                 <p className="tracking-widest text-gray-600">{product.description}</p>
                 

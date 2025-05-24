@@ -22,7 +22,7 @@ const Navbar = ({ children, className = "" }) => {
 
   return (
     <div className={`z-[999] bg-transparent text-whit  ${className || ""}`}>
-      <nav className="container py-2 lg:border-none border-b border-primary">
+      <nav className="container py-2 sm:border-none border-b border-primary">
         <div className="flex justify-between items-center gap-4">
           {/* Logo Section */}
           <div data-aos="fade-down" data-aos-once="true" data-aos-delay="200">

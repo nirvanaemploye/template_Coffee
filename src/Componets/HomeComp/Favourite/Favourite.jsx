@@ -81,7 +81,7 @@ const Favourite = () => {
             {FevouriteList.map((data, index) => (
               <div
                 key={index}
-                className=" flex items-center justify-between w-full group relative hover:scale-105 duration-300 transition "
+                className="cursor-pointer flex items-center justify-between w-full group relative hover:scale-105 duration-300 transition "
               >
                 <div  className="items-center justify-cente  mx-auto">
                   <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true" className="flex justify-center items-center gap-4">

@@ -87,7 +87,7 @@ const settings = {
   slidesToShow: 4,
   slidesToScroll: 2, // Scrolls 2 slides at a time for better UX
   autoplay: true, // Enables auto-sliding
-  autoplaySpeed: 3000, // Slides every 3 seconds
+  autoplaySpeed: 2000, // Slides every 3 seconds
   responsive: [
     { breakpoint: 1280, settings: { slidesToShow: 3, slidesToScroll: 2 } },
     { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1 } },

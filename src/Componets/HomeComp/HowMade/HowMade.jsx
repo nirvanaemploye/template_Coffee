@@ -38,7 +38,7 @@ const HowMade = () => {
               <img
                 src={CircalIn}
                 alt=""
-                className=" 2xl:p-4 absolute 2xl:h-96 xl:h-64 fastspin scale-50"
+                className=" 2xl:p-4 absolute 2xl:h-96 xl:h-64 fastspin h-72 sm:h-auto"
               />
               <motion.img
                 src={CoffeeCup}

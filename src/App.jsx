@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+// Home Page 
 import Home from "./Componets/HomeComp/Hero/Home";
 import Testimonials from "./Componets/HomeComp/Testimonials/Testimonials";
 import Footer from "./Componets/Layout/Footer/Footer";
@@ -8,22 +9,29 @@ import HowMade from "./Componets/HomeComp/HowMade/HowMade";
 import Perfect from "./Componets/HomeComp/Perfect/Perfect";
 import Favourite from "./Componets/HomeComp/Favourite/Favourite";
 import Delights from "./Componets/HomeComp/Delights/Delights";
+// React Router
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+// About Page
 import AboutHero from "./Componets/AboutComp/AboutHero/AboutHero";
-import ServiceHero from "./Componets/ServiceComp/ServiceHero/ServiceHero";
-import ContactUsHero from "./Componets/ContactUsComp/ContactUSHero/ContactUsHero";
-import OrderHero from "./Componets/OrderComp/OrderHero/OrderHero";
 import OurMission from "./Componets/AboutComp/OurMission/OurMission";
 import Gallery from "./Componets/AboutComp/Gallery/Gallery";
 import Speciality from "./Componets/AboutComp/Speciality/Speciality";
 import SalesPoints from "./Componets/AboutComp/SalesPoints/SalesPoints";
-import KeepInTouch from "./Componets/ContactUsComp/KeepInTouch/KeepInTouch";
+// Services Page
+import ServiceHero from "./Componets/ServiceComp/ServiceHero/ServiceHero";
 import NewsOffers from "./Componets/ServiceComp/NewsOffers/NewsOffers";
 import Address from "./Componets/ServiceComp/Address/Address";
 import WhatWeOffer from "./Componets/ServiceComp/WhatWeOffer/WhatWeOffer";
+// Contact Page
+import ContactUsHero from "./Componets/ContactUsComp/ContactUSHero/ContactUsHero";
+import KeepInTouch from "./Componets/ContactUsComp/KeepInTouch/KeepInTouch";
+// import KeepInTouchcopy from "./Componets/ContactUsComp/KeepInTouch copy/KeepInTouch";
+// Order Page
+import OrderHero from "./Componets/OrderComp/OrderHero/OrderHero";
 import AddToCart from "./Componets/OrderComp/AddToCart/AddToCart";
+// 
 import { CartProvider } from "./context/CartContext";
-// import Order from "./pages/Order";
+import Order from "./pages/Order";
 
 const App = () => {
   useEffect(() => {
@@ -93,6 +101,7 @@ const App = () => {
                 <>
                   <ContactUsHero />
                   <KeepInTouch />
+                  {/* <KeepInTouchcopy   /> */}
                 </>
               }
             />
@@ -103,6 +112,7 @@ const App = () => {
                 <>
                   <OrderHero />
                   <AddToCart />
+                  <Order />
                 </>
               }
             />

@@ -15,7 +15,7 @@ const Address = () => {
     <section className="py-32" style={AddBg}>
       <div className="container text-white">
         {/* Cards grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-20 ">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-20 gap-x-14 ">
           {/* Contact Us Card */}
           <div
             data-aos="zoom-in"

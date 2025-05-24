@@ -1,3 +1,4 @@
+import Slider from "react-slick";
 import dhruv from "../../../assets/HomeCompImg/Dhruv.png";
 import { AiFillGoogleCircle } from "react-icons/ai";
 import { MdFacebook } from "react-icons/md";
@@ -8,6 +9,7 @@ import VectorH from "../../../assets/HomeCompImg/TestimonialsImg/VectorH.png";
 import invertedcommasN from "../../../assets/HomeCompImg/TestimonialsImg/invertedcommasN.png";
 import invertedcommasH from "../../../assets/HomeCompImg/TestimonialsImg/invertedcommasH.png";
 
+// Testimonial Data
 const testimonials = [
   {
     name: "Neil Wilford",
@@ -27,9 +29,37 @@ const testimonials = [
     image: dhruv, // Replace with actual image
     highlight: false,
   },
+  {
+    name: "Neil Wilford",
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.",
+    image: dhruv, // Replace with actual image
+    highlight: false,
+  },
+  {
+    name: "Neil Wilford",
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.",
+    image: dhruv, // Replace with actual image
+    highlight: true,
+  },
+  
 ];
 
 const Testimonials = () => {
+  // Slick Slider Settings
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 700,
+  slidesToShow: 3,
+  slidesToScroll: 1, // Scrolls 2 slides at a time for better UX
+  autoplay: true, // Enables auto-sliding
+  autoplaySpeed: 2000, // Slides every 3 seconds
+  responsive: [
+    { breakpoint: 1280, settings: { slidesToShow: 3, slidesToScroll: 2 } },
+    { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1 } },
+    { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+  ],
+};
   return (
     <section className="py-32 bg-primary/10">
       <div className="container">
@@ -42,12 +72,15 @@ const Testimonials = () => {
           </h1>
           <BaseLine />
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 px-2 md:px-0 mt-20">
+        {/* Testimonial Slider */}
+        <div className="pt-20">
+          <Slider {...settings} className="pb-4">
           {testimonials.map((testimonial, index) => (
-            <div
+           <div key={index} className="px-5">
+               <div
               data-aos="zoom-in"
               key={index}
-              className="flex flex-col text-center space-y-4 bg-white group "
+              className="flex flex-col text-center space-y-4 bg-white group gap-10"
             >
               <div className="space-y-5 p-8">
                 <div className="">
@@ -74,9 +107,9 @@ const Testimonials = () => {
                     {testimonial.name}
                   </p>
                   <div className="flex justify-center items-center space-x-3 mt-2 text-3xl text-primary xl:group-hover:text-white group-hover:text-white sm:group-hover:text-primary duration-300">
-                    <AiFillGoogleCircle />
-                    <MdFacebook />
-                    <RiWhatsappFill />
+                    <AiFillGoogleCircle className="cursor-pointer hover:text-secondary/50" />
+                    <MdFacebook className="cursor-pointer hover:text-secondary/50" />
+                    <RiWhatsappFill className="cursor-pointer hover:text-secondary/50" />
                   </div>
                 </div>
               </div>
@@ -94,7 +127,9 @@ const Testimonials = () => {
                 />
               </div>
             </div>
+           </div>
           ))}
+        </Slider>
         </div>
       </div>
     </section>
