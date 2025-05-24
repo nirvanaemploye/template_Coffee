@@ -31,7 +31,6 @@ import OrderHero from "./Componets/OrderComp/OrderHero/OrderHero";
 import AddToCart from "./Componets/OrderComp/AddToCart/AddToCart";
 // 
 import { CartProvider } from "./context/CartContext";
-import Order from "./pages/Order";
 
 const App = () => {
   useEffect(() => {
@@ -48,6 +47,7 @@ const App = () => {
     <CartProvider>
       <div className="overflow-x-hidden ">
         <BrowserRouter>
+        
           <Routes>
             {/* Default Route */}
 
@@ -112,7 +112,7 @@ const App = () => {
                 <>
                   <OrderHero />
                   <AddToCart />
-                  <Order />
+                  
                 </>
               }
             />
