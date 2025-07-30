@@ -71,7 +71,7 @@ const AddToCart = () => {
                       <span className="sm:order-2">{item.name}</span>
                       <button
                         onClick={() => handleRemoveItem(item.id)}
-                        className="sm:p-2 rounded-full border border-gray-300 hover:bg-red-500 hover:text-white transition "
+                        className="sm:p-2 rounded-full border border-gray-200 shadow-2xl shadow-black hover:bg-red-500 hover:text-white transition "
                       >
                         <FaTimes />
                       </button>
@@ -80,17 +80,17 @@ const AddToCart = () => {
                       ${item.price.toFixed(2)}
                     </td>
                     <td className="sm:p-4 text-primary">
-                      <div className="flex items-center justify-center  text-center rounded-lg">
+                      <div className="flex items-center justify-center text-center rounded-lg">
                         <button
                           onClick={() => handleQuantityChange(item.id, -1)}
-                          className="sm:px-3 sm:py-2 hover:bg-gray-200"
+                          className="sm:px-3 sm:py-2 text-sm hover:bg-gray-200"
                         >
                           <FaMinus />
                         </button>
-                        <span className="px-4">{item.quantity}</span>
+                        <span className="px-4 text-black">{item.quantity}</span>
                         <button
                           onClick={() => handleQuantityChange(item.id, 1)}
-                          className="sm:px-3 sm:py-2 hover:bg-gray-200"
+                          className="sm:px-3 sm:py-2 text-sm hover:bg-gray-200"
                         >
                           <FaPlus />
                         </button>
