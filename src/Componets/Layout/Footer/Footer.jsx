@@ -66,19 +66,19 @@ const Footer = () => {
           <div className="md:space-y-10 space-y-5 lg:mx-auto ">
             <h1 className="xl:text-3xl text-2xl font-bold text-primary">GET IN TOUCH </h1>
             <div className="lg:space-y-8 space-y-4">
-              <p className="flex gap-x-3 xl:text-2xl sm:text-xl font-medium">
+              <p className="flex gap-x-3 xl:text-2xl sm:text-xl font-medium cursor-pointer">
                 <span className="text-primary xl:text-4xl text-3xl ">
                   <MdLocationOn />
                 </span>
                 66 Dennie, VJ City, Paris, 5010
               </p>
-              <p className="flex gap-x-3 xl:text-2xl sm:text-xl font-medium" >
+              <p className="flex gap-x-3 xl:text-2xl sm:text-xl font-medium cursor-pointer" >
                 <span className="text-primary xl:text-4xl text-3xl">
                   <IoMdCall />
                 </span>
                 568760022700
               </p>
-              <p className="flex gap-x-3 xl:text-2xl sm:text-xl font-medium">
+              <p className="flex gap-x-3 xl:text-2xl sm:text-xl font-medium cursor-pointer">
                 <span className="text-primary xl:text-4xl text-3xl">
                   <MdEmail />
                 </span>
