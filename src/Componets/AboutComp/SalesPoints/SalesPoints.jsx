@@ -58,25 +58,28 @@ const SalesPoints = () => {
               <div className="grid grid-cols-3 gap-y-4 py-5 sm:pr-20">
                 {City.map((data) => (
                   <a key={data.id} className="flex items-center font-bold sm:text-2xl text-gray-800 cursor-pointer">
-                  <MdKeyboardArrowRight className="text-black text-sm sm:text-4xl mr-1" />
-                  {data.CityName}
-                </a>
+                    <MdKeyboardArrowRight className="text-black text-sm sm:text-4xl mr-1" />
+                    {data.CityName}
+                  </a>
                 ))}
               </div>
             </div>
           </div>
           <div className="flex justify-center items-center w-full">
-  <div className="w-full max-w-4xl aspect-video">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3730.3223539722326!2d73.06192229999999!3d20.778242799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0ed0065bf26a3%3A0xac5127c2ebe92f7c!2sOne%20more%20cafe!5e0!3m2!1sen!2sin!4v1748066087553!5m2!1sen!2sin"
-      className="w-full h-full"
-      style={{ border: 0 }}
-      allowFullScreen
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-    />
-  </div>
-</div>
+            <div className="w-full aspect-video">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.609358642894!2d2.330517558938831!3d48.866467383689056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e25e28c0291%3A0xe5ed96cd530ca0e5!2sStarbucks%20Coffee!5e1!3m2!1sen!2sin!4v1753896288217!5m2!1sen!2sin"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Google Map Location"
+              ></iframe>
+            </div>
+          </div>
+
 
         </div>
       </div>
