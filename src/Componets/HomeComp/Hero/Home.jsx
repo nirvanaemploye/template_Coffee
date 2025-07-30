@@ -35,7 +35,7 @@ const Home = () => {
               data-aos-duration="100"
               className="text-4xl sm:text-4xl lg:text-5xl 2xl:text-7xl font-bold"
             >
-              We Serve the richest{" "}
+              We serve the richest{" "}
               <span
                 data-aos="zoom-in"
                 data-aos-delay="300"
