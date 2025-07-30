@@ -29,7 +29,7 @@ const ResponsiveMenu = ({ isOpen, closeMenu }) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -30 }}
             transition={{ duration: 0.3 }}
-            className="fixed top-12 left-0 right-0 z-50 bg-primary/90 text-white py-6 shadow-lg lg:hidden"
+            className="fixed top-12 left-0 right-0 z-50 bg-primary/90 text-white py-6 shadow-lg xl:hidden"
           >
             <ul className="flex flex-col items-center gap-6 text-lg font-semibold uppercase">
               {navlink.map(({ id, name, link }) => (

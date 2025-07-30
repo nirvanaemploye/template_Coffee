@@ -12,7 +12,7 @@ const Home = () => {
       <img
         src={HeroBg}
         alt="Background"
-        className="hidden lg:block absolute 2xl:top-0 -top-12 right-0  max-w-2xl 2xl:max-w-none scale-105 2xl:scale-110"
+        className="hidden xl:block absolute 2xl:top-0 -top-12 right-0  max-w-2xl 2xl:max-w-none scale-105 2xl:scale-110"
       />
 
       {/* Navbar */}

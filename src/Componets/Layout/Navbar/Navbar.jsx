@@ -2,7 +2,6 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/Logo.png";
 import ShopLogo from "../../../assets/OrderLogo.png";
-import PrimaryButton from "../PrimaryButton";
 import { useState } from "react";
 import ResponsiveMenu from "./ResponsiveMenu";
 import { CgMenuOreos } from "react-icons/cg";
@@ -36,7 +35,7 @@ const Navbar = ({ className = "" }) => {
 
           {/* Links + Button */}
           <div className="flex items-center gap-2 lg:gap-8">
-            <ul className="hidden lg:flex items-center gap-4 text-primary">
+            <ul className="hidden xl:flex items-center gap-4 text-primary">
               {menus.map((data) => (
                 <li key={data.id}>
                   <Link
@@ -59,11 +58,11 @@ const Navbar = ({ className = "" }) => {
             </ul>
 
             {/* Order Button */}
-            
-            <button onClick={() => navigate("/order")} className="flex items-center gap-x-2 py-2.5 px-5 text-sm font-bold bg-white text-black rounded-full hover:text-primary duration-200 lg:border-none border border-primary ">Order<img src={ShopLogo} alt="Shop Logo" className="w-5" /></button>
+
+            <button onClick={() => navigate("/order")} className="flex items-center gap-x-2 py-2.5 px-5 text-sm font-bold bg-white text-black rounded-full hover:text-primary duration-200 xl:border-none border border-primary ">Order<img src={ShopLogo} alt="Shop Logo" className="w-5" /></button>
 
             {/* Mobile Menu Icon */}
-            <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
+            <button className="xl:hidden" onClick={() => setIsOpen(!isOpen)}>
               <CgMenuOreos className="text-3xl text-primary" />
             </button>
           </div>
