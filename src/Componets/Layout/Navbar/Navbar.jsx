@@ -27,7 +27,7 @@ const Navbar = ({ className = "" }) => {
           <Link
             to="/"
             className={`font-bold flex items-end ${isHomePage ? "text-black" : "text-white"
-              } text-lg sm:text-2xl lg:text-3xl tracking-wider`}
+              } text-lg sm:text-2xl lg:text-3xl tracking-wider leading-loose`}
           >
             <img src={logo} alt="logo" className="sm:w-9 w-8 mr-2 " />
             BrewBeans
@@ -59,7 +59,7 @@ const Navbar = ({ className = "" }) => {
 
             {/* Order Button */}
 
-            <button onClick={() => navigate("/order")} className="flex items-center gap-x-2 py-2.5 px-5 text-sm font-bold bg-white text-black rounded-full hover:text-primary duration-200 xl:border-none border border-primary ">Order<img src={ShopLogo} alt="Shop Logo" className="w-5" /></button>
+            <button onClick={() => navigate("/order")} className="flex items-center gap-x-2 py-1.5 px-2.5 sm:py-2.5 sm:px-5 text-sm font-bold bg-white text-black rounded-full hover:text-primary duration-200 xl:border-none border border-primary ">Order<img src={ShopLogo} alt="Shop Logo" className="w-5" /></button>
 
             {/* Mobile Menu Icon */}
             <button className="xl:hidden" onClick={() => setIsOpen(!isOpen)}>

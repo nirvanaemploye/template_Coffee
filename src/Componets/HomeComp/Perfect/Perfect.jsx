@@ -8,7 +8,7 @@ const PerfectCupList = [
   {
     id: 1,
     img: PerImg1,
-    name: "Eseresso Coffee",
+    name: "Espresso Coffee",
     description:
       "Lorem Ipsum is simply dummy text of the printing. Lorem Ipsum has been",
     aosDelay: "100",

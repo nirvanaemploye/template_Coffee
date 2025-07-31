@@ -52,12 +52,12 @@ const WhatWeOffer = () => {
               <div className="py-5">
                 <h1 
                   onClick={() => toggleSection('dining')}
-                  className="font-bold text-xl sm:text-2xl flex items-center gap-2 cursor-pointer"
+                  className="font-bold text-xl flex items-center gap-3 cursor-pointer"
                 >
                   <span>
                     {activeSection === 'dining' ? 
-                      <FaMinus className="text-primary text-xl" /> : 
-                      <FaPlus className="text-primary text-xl" />
+                      <FaMinus className="text-primary text-lg" /> : 
+                      <FaPlus className="text-primary text-lg" />
                     }
                   </span>
                   {sections.dining.title}
@@ -72,12 +72,12 @@ const WhatWeOffer = () => {
               <div className="py-5">
                 <h1 
                   onClick={() => toggleSection('wedding')}
-                  className="font-bold text-xl flex items-center gap-2 cursor-pointer"
+                  className="font-bold text-xl flex items-center gap-3 cursor-pointer"
                 >
                   <span>
                     {activeSection === 'wedding' ? 
-                      <FaMinus className="text-primary text-xl" /> : 
-                      <FaPlus className="text-primary text-xl" />
+                      <FaMinus className="text-primary text-lg" /> : 
+                      <FaPlus className="text-primary text-lg" />
                     }
                   </span>
                   {sections.wedding.title}
@@ -92,12 +92,12 @@ const WhatWeOffer = () => {
               <div className="py-5">
                 <h1 
                   onClick={() => toggleSection('birthday')}
-                  className="font-bold text-xl flex items-center gap-2 cursor-pointer"
+                  className="font-bold text-xl flex items-center gap-3 cursor-pointer"
                 >
                   <span>
                     {activeSection === 'birthday' ? 
-                      <FaMinus className="text-primary text-xl" /> : 
-                      <FaPlus className="text-primary text-xl" />
+                      <FaMinus className="text-primary text-lg" /> : 
+                      <FaPlus className="text-primary text-lg" />
                     }
                   </span>
                   {sections.birthday.title}
