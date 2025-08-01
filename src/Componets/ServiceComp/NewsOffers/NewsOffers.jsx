@@ -17,15 +17,15 @@ const NewsOffers = () => {
   };
 
   return (
-    <section className="py-20">
+    <section className="py-8 md:py-20">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
-          <div data-aos="fade-down" className="mx-9 2xl:px-16">
+          <div data-aos="fade-down" className="mx-4 md:mx-9 2xl:px-16">
             <h1 className=" text-3xl md:text-5xl font-bold sm:leading-relaxed tracking-wider">
               Stay Upto Date On All News And Offers.
             </h1>
           </div>
-          <div data-aos="fade-down" className=" space-y-5 lg:pe-20 px-10">
+          <div data-aos="fade-down" className=" space-y-5 lg:pe-20 px-4 md:px-10">
             <p className="text-lg text-black/40 sm:tracking-widest ">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit
               amet leo sit amet ante luctac.

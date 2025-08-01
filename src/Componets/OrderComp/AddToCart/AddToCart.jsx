@@ -4,6 +4,8 @@ import List1 from "../../../assets/HomeCompImg/DelightsImg/list1.png";
 import List2 from "../../../assets/HomeCompImg/DelightsImg/List2.png";
 import { GoPlus } from "react-icons/go";
 import { HiMinus } from "react-icons/hi";
+import { Link } from "react-router";
+import PrimaryButton from "../../Layout/PrimaryButton";
 
 const AddToCart = () => {
   const [cartItems, setCartItems] = useState([
@@ -34,9 +36,9 @@ const AddToCart = () => {
   const total = subtotal + shippingCost;
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8">
+    <section className="py-10 md:py-24 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto flex flex-col gap-10">
-        
+
         {/* Cart Table with horizontal scroll on small screens */}
         <div className="overflow-x-auto " data-aos="fade-up">
           <table className="min-w-full border-collapse">
@@ -52,19 +54,19 @@ const AddToCart = () => {
               {cartItems.map((item) => (
                 <tr key={item.id} className="border-b text-xs sm:text-base">
                   <td className="flex flex-col sm:flex-row items-center text-center sm:p-4 gap-4">
-                      <img
-                        src={item.image}
-                        alt={item.name}
-                        className="p-1 sm:p-4 h-16 sm:h-40 sm:order-1"
-                      />
-                      <span className="sm:order-2">{item.name}</span>
-                      <button
-                        onClick={() => handleRemoveItem(item.id)}
-                        className="sm:p-2 rounded-full border border-gray-300 hover:bg-red-500 hover:text-white transition "
-                      >
-                        <FaTimes />
-                      </button>
-                    </td>
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="p-1 sm:p-4 h-16 sm:h-40 sm:order-1"
+                    />
+                    <span className="sm:order-2">{item.name}</span>
+                    <button
+                      onClick={() => handleRemoveItem(item.id)}
+                      className="sm:p-2 rounded-full border border-gray-300 hover:bg-red-500 hover:text-white transition "
+                    >
+                      <FaTimes />
+                    </button>
+                  </td>
                   <td className="p-4 text-primary font-semibold text-center">
                     ${item.price.toFixed(2)}
                   </td>
@@ -96,7 +98,10 @@ const AddToCart = () => {
 
         {/* Cart Totals */}
         <div className="w-full lg:w-1/3 lg:ml-auto">
-          <div data-aos="fade-left" className="bg-[#242425] text-white p-6 rounded-lg">
+          <div
+            data-aos="fade-left"
+            className="bg-[#242425] text-white p-6 rounded-lg"
+          >
             <h2 className="text-lg sm:text-xl font-bold mb-4 text-primary">
               Cart Totals
             </h2>
@@ -114,8 +119,16 @@ const AddToCart = () => {
                 <span>${total.toFixed(2)}</span>
               </div>
             </div>
+
+            {/* Checkout Button */}
+            <div className="mt-4">
+              <Link to="/">
+                <PrimaryButton className="text-white w-full rounded-lg">Order Now</PrimaryButton>
+              </Link>
+            </div>
           </div>
         </div>
+
 
       </div>
     </section>

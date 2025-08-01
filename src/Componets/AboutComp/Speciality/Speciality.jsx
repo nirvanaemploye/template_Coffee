@@ -32,13 +32,13 @@ const products = [
 
 const Speciality = () => {
   return (
-    <section className="py-12 sm:py-32 relative bg-white">
+    <section className="py-12 sm:py-28 relative bg-white">
       {/* Positioned Background Images */}
       <img src={TopImg} alt="" className="absolute top-0 right-0  " />
       <img src={BottomImg} alt="" className="absolute bottom-0 left-0 " />
 
       <div className="container mx-auto px-6">
-        <div className="flex flex-col items-center space-y-6 text-center">
+        <div className="flex flex-col items-center space-y-5 text-center">
           <h1 data-aos="fade" className="font-bold text-3xl sm:text-5xl tracking-wider">Our Speciality</h1>
           <BaseLine />
           <p data-aos="fade-up" className="w-10/12 md:w-9/12 sm:text-lg text-black/50 tracking-widest">
@@ -49,7 +49,7 @@ const Speciality = () => {
         {/* Products Grid */}
         <div className="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-10">
           {products.map((product) => (
-            <div data-aos="zoom-in" key={product.id} className="sm:p-5 hover:shadow-xl duration-300 translation group">
+            <div data-aos="zoom-in" key={product.id} className="sm:p-5 xl:hover:shadow-xl duration-300 translation group">
               {/* Product Image */}
               <div className="bg-gray-100 flex justify-center aspect-w-1 aspect-h-1 h-64 w-full p-5">
                 <img src={product.image} alt={product.name} className="flex m-8 max-h-full object-contain group-hover:scale-110 duration-300 ease-in-out translation" />

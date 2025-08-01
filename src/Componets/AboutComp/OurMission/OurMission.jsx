@@ -5,7 +5,7 @@ import Circal from "../../../assets/HomeCompImg/HowMade/Ellipse2.png";
 const OurMission = () => {
   return (
     <section className="py-12 sm:py-32">
-      <div className="container flex flex-col lg:flex-row items-center gap-x-12 gap-y-12 relative">
+      <div className="container flex flex-col lg:flex-row items-center gap-x-12 gap-y-5 relative">
         
         {/* Image Section */}
         <div data-aos="fade" className="lg:w-2/5 p-3 relative flex justify-center items-center">
@@ -18,7 +18,7 @@ const OurMission = () => {
         </div>
 
         {/* Text Content Section */}
-        <div className="pt-10 px-1 lg:w-3/5 space-y-8 text-center lg:text-left">
+        <div className="pt-10 px-1 lg:w-3/5 space-y-5 md:space-y-8 text-center lg:text-left">
           <p data-aos="fade-up" className="text-xl sm:text-3xl font-bold text-primary uppercase">Our Mission</p>
           <h1 data-aos="fade-up" className="font-bold text-3xl sm:text-[44px] leading-tight">
             We source coffee from all over the world from farmers we know and trust

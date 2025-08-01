@@ -31,11 +31,11 @@ const WhatWeOffer = () => {
   };
 
   return (
-    <section className="py-32">
+    <section className="py-16 md:py-28">
       <div className="container">
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-y-14">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-y-8">
           <div className="flex flex-col justify-between p-3 2xl:px-14 2xl:p-10 order-2 xl:order-1">
-            <div className="space-y-5 sm:tracking-widest sm:leading-9">
+            <div className="space-y-3 md:space-y-5 sm:tracking-widest sm:leading-9">
               <p data-aos="fade-down" className="text-xl sm:text-3xl text-primary font-bold tracking-wider">What We Offer?</p>
               <p data-aos="fade-down" className="font-bold text-3xl sm:text-5xl leading-tight">
                 Host private events in an intimate setting
@@ -49,7 +49,7 @@ const WhatWeOffer = () => {
             </div>
             {/*  */}
             <div data-aos="fade-down" className="smleading-9 tracking-widest sm:text-lg">
-              <div className="py-5">
+              <div className="py-4 md:py-5">
                 <h1 
                   onClick={() => toggleSection('dining')}
                   className="font-bold text-xl flex items-center gap-3 cursor-pointer"
@@ -69,7 +69,7 @@ const WhatWeOffer = () => {
                 )}
               </div>
               <hr className="border-e border-black/25"/>
-              <div className="py-5">
+              <div className="py-4 md:py-5">
                 <h1 
                   onClick={() => toggleSection('wedding')}
                   className="font-bold text-xl flex items-center gap-3 cursor-pointer"
@@ -89,7 +89,7 @@ const WhatWeOffer = () => {
                 )}
               </div>
               <hr className="border-e border-black/25" />
-              <div className="py-5">
+              <div className="py-4 md:py-5">
                 <h1 
                   onClick={() => toggleSection('birthday')}
                   className="font-bold text-xl flex items-center gap-3 cursor-pointer"

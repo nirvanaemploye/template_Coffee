@@ -14,7 +14,7 @@ const City = [
 
 const SalesPoints = () => {
   return (
-    <section className="py-16 bg-primary/15">
+    <section className="py-8 md:py-16 bg-primary/15">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-6">
           {/* Left Content */}
@@ -35,7 +35,7 @@ const SalesPoints = () => {
             </p>
 
             {/* City List */}
-            <div data-aos="fade-right" className="pt-6 sm:pt-10 lg:pt-16">
+            <div data-aos="fade-right" className="pt-4 sm:pt-10 lg:pt-16">
               <h1 className="font-bold text-xl sm:text-2xl md:text-3xl text-primary mb-4">
                 Where to buy our coffee:
               </h1>

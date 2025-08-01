@@ -9,9 +9,9 @@ import Bootom4 from "../../../assets/AboutCompImg/GalleryImg/Bo4.png";
 
 const Gallery = () => {
   return (
-    <section className="pt-12 sm:pt-32 overflow-visible">
+    <section className="py-5 md:py-12 overflow-visible">
       <div className="">
-        <div className="flex flex-col items-center sm:space-y-14 space-y-8">
+        <div className="flex flex-col items-center sm:space-y-10 space-y-5">
           <h1 data-aos="fade" className="text-center font-bold text-3xl sm:text-5xl tracking-wider ">
             Our Gallery
           </h1>
