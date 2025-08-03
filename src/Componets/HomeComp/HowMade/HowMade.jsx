@@ -31,9 +31,9 @@ const HowMade = () => {
           <BaseLine />
 
           {/* Grid div  */}
-          <div className="grid grid-cols-1 xl:grid-cols-3 pt-10 2xl:gap-x-10 ">
+          <div className="grid grid-cols-1 xl:grid-cols-3 pt-10 2xl:gap-x-10  ">
             {/* Centar Div  */}
-            <div data-aos="zoom-in" className="relative flex items-center justify-center order-1 xl:order-2 ">
+            <div data-aos="zoom-in" className="relative flex items-center justify-center order-1 xl:order-2 pb-16 xl:pb-0 ">
               <img src={CircalOut} alt="" className=" Rspin scale-110" />
               <img
                 src={CircalIn}

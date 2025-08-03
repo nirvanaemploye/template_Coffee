@@ -78,7 +78,7 @@ const AddToCart = () => {
                       >
                         <HiMinus />
                       </button>
-                      <span>{item.quantity}</span>
+                      <span className="font-semibold">{item.quantity}</span>
                       <button
                         onClick={() => handleQuantityChange(item.id, 1)}
                         className="p-2 hover:bg-gray-200 rounded"
