@@ -27,7 +27,7 @@ const Navbar = ({ className = "" }) => {
           <Link
             to="/"
             className={`font-bold flex items-end ${isHomePage ? "text-black" : "text-white"
-              } text-lg sm:text-2xl lg:text-3xl tracking-wider leading-loose`}
+              } text-lg sm:text-2xl lg:text-3xl tracking-wider leading-3`}
           >
             <img src={logo} alt="logo" className="sm:w-9 w-8 mr-2 " />
             BrewBeans

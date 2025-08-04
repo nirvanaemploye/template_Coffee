@@ -3,7 +3,7 @@ import { FaPlus, FaMinus, FaTimes } from "react-icons/fa";
 import List1 from "../../../assets/HomeCompImg/DelightsImg/list1.png";
 import List2 from "../../../assets/HomeCompImg/DelightsImg/List2.png";
 import { GoPlus } from "react-icons/go";
-import { HiMinus } from "react-icons/hi";
+import { HiMinus, HiOutlineMinus } from "react-icons/hi";
 import { Link } from "react-router";
 import PrimaryButton from "../../Layout/PrimaryButton";
 
@@ -76,7 +76,7 @@ const AddToCart = () => {
                         onClick={() => handleQuantityChange(item.id, -1)}
                         className="p-2 hover:bg-gray-200 rounded"
                       >
-                        <HiMinus />
+                        <HiOutlineMinus />
                       </button>
                       <span className="font-semibold">{item.quantity}</span>
                       <button

@@ -8,6 +8,7 @@ import VectorN from "../../../assets/HomeCompImg/TestimonialsImg/VectorN.png";
 import VectorH from "../../../assets/HomeCompImg/TestimonialsImg/VectorH.png";
 import invertedcommasN from "../../../assets/HomeCompImg/TestimonialsImg/invertedcommasN.png";
 import invertedcommasH from "../../../assets/HomeCompImg/TestimonialsImg/invertedcommasH.png";
+import { a } from "motion/react-client";
 
 // Testimonial Data
 const testimonials = [
@@ -54,6 +55,7 @@ const Testimonials = () => {
     slidesToScroll: 1, // Scrolls 2 slides at a time for better UX
     autoplay: true, // Enables auto-sliding
     autoplaySpeed: 2000, // Slides every 3 seconds
+    arrows: false,
     responsive: [
       { breakpoint: 1280, settings: { slidesToShow: 3, slidesToScroll: 2 } },
       { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1 } },
