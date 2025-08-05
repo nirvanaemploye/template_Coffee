@@ -1,5 +1,4 @@
 import Heroimg from "../../../assets/HomeCompImg/Coffee.png";
-import Heroimg2 from "../../../assets/HomeCompImg/Bnans.png";
 import HeroBg from "../../../assets/HomeCompImg/HomeBg.webp";
 import Bnans from "../../../assets/HomeCompImg/Bnanss.png";
 import PrimaryButton from "../../Layout/PrimaryButton";
@@ -7,12 +6,12 @@ import Navbar from "../../Layout/Navbar/Navbar";
 
 const Home = () => {
   return (
-    <section className="container pr-0 relative text-black z-10">
+    <section className="container 4k:px-0 relative text-black z-10">
       {/* Background Image */}
       <img
         src={HeroBg}
         alt="Background"
-        className="hidden xl:block absolute 2xl:top-0 -top-12 right-0  max-w-2xl 2xl:max-w-none scale-105 2xl:scale-110"
+        className="hidden xl:block absolute 2xl:top-0 -top-12 right-0  max-w-2xl 2xl:max-w-none scale-105 2xl:scale-150 2xl:w-5/12"
       />
 
       {/* Navbar */}
@@ -20,7 +19,7 @@ const Home = () => {
 
       {/* Main Content */}
       <div className="container sm:py-6 2xl:py-12 ">
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center relative ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center relative 4k:px-0">
           {/* Text Content Section */}
           <div className=" order-2 sm:order-1 flex flex-col gap-7 2xl:gap-10 ">
             <img
@@ -46,7 +45,7 @@ const Home = () => {
               </span>{" "}
               in the city
             </h1>
-            <p data-aos="zoom-in" className="w-11/12 text-black/50 lg:text-base text-sm" >
+            <p data-aos="zoom-in" className="w-11.5/12 text-black/50 lg:text-lg text-sm" >
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s.
@@ -59,12 +58,12 @@ const Home = () => {
           </div>
 
           {/* Image Section */}
-          <div className="relative order-1 sm:order-2 2xl:min-h-[450px] ">
+          <div className="relative order-1 sm:order-2 4k:min-h-[450px] mx-auto ">
             <img
               data-aos="zoom"
               src={Heroimg}
               alt="Coffee Cup"
-              className="mx-auto spin p-10 2xl:pe-20 "
+              className="mx-auto spin p-5"
             />
             
           </div>
