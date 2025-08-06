@@ -36,36 +36,57 @@ const Navbar = ({ className = "" }) => {
           {/* Links + Button */}
           <div className="flex items-center gap-2 lg:gap-8">
             <ul className="hidden xl:flex items-center gap-4 text-primary">
-              {menus.map((data) => (
-                <li key={data.id}>
-                  <Link
-                    to={data.link}
-                    className={`inline-block text-xl py-1 px-4 ${isHomePage ? "hover:text-black" : "hover:text-primary"
-                      } text-white duration-300 relative group font-bold`}
-                  >
-                    <span
-                      className={`absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 group-hover:w-2/6 ${isHomePage ? "bg-white" : "bg-primary"
-                        }`}
-                    ></span>
-                    <span
-                      className={`absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 group-hover:w-2/6 ${isHomePage ? "bg-white" : "bg-primary"
-                        }`}
-                    ></span>
-                    {data.name}
-                  </Link>
-                </li>
-              ))}
+              {menus.map((data) => {
+                const isActive = location.pathname === data.link;
+
+                return (
+                  <li key={data.id}>
+                    <Link
+                      to={data.link}
+                      className={`inline-block text-xl py-1 px-4 font-bold duration-300 relative group 
+  ${
+    isActive
+      ? isHomePage 
+        ? "text-black" // active & home page
+        : "text-primary" // active & not home page
+      : isHomePage
+        ? "text-white hover:text-black" // not active & home page
+        : "text-white hover:text-primary" // not active & not home page
+  }`}
+
+                    >
+                      <span
+                        className={`absolute -bottom-1 left-1/2 transition-all h-0.5 
+                ${isActive ? "bg-primary w-2/6" : "w-0 group-hover:w-2/6"} 
+                ${isHomePage && !isActive ? "bg-white" : ""}`}
+                      ></span>
+                      <span
+                        className={`absolute -bottom-1 right-1/2 transition-all h-0.5 
+                ${isActive ? "bg-primary w-2/6" : "w-0 group-hover:w-2/6"} 
+                ${isHomePage && !isActive ? "bg-white" : ""}`}
+                      ></span>
+                      {data.name}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
 
             {/* Order Button */}
-
-            <button onClick={() => navigate("/order")} className="flex items-center gap-x-2 py-1.5 px-2.5 sm:py-2.5 sm:px-5 text-sm font-bold bg-white text-black rounded-full hover:text-primary duration-200 xl:border-none border border-primary ">Order<img src={ShopLogo} alt="Shop Logo" className="w-5" /></button>
+            <button
+              onClick={() => navigate("/order")}
+              className="flex items-center gap-x-2 py-1.5 px-2.5 sm:py-2.5 sm:px-5 text-sm font-bold bg-white text-black rounded-full hover:text-primary duration-200 xl:border-none border border-primary"
+            >
+              Order
+              <img src={ShopLogo} alt="Shop Logo" className="w-5" />
+            </button>
 
             {/* Mobile Menu Icon */}
             <button className="xl:hidden" onClick={() => setIsOpen(!isOpen)}>
               <CgMenuOreos className="text-3xl text-primary" />
             </button>
           </div>
+
         </div>
       </nav>
 
