@@ -15,7 +15,7 @@ const Navbar = ({ className = "" }) => {
   const menus = [
     { id: 1, name: "Home", link: "/home" },
     { id: 2, name: "About", link: "/about" },
-    { id: 3, name: "Services", link: "/services" },
+    { id: 3, name: "Services", link: "/service" },
     { id: 4, name: "Contact Us", link: "/contact" },
   ];
 
@@ -44,15 +44,14 @@ const Navbar = ({ className = "" }) => {
                     <Link
                       to={data.link}
                       className={`inline-block text-xl py-1 px-4 font-bold duration-300 relative group 
-  ${
-    isActive
-      ? isHomePage 
-        ? "text-black" // active & home page
-        : "text-primary" // active & not home page
-      : isHomePage
-        ? "text-white hover:text-black" // not active & home page
-        : "text-white hover:text-primary" // not active & not home page
-  }`}
+  ${isActive
+                          ? isHomePage
+                            ? "text-black" // active & home page
+                            : "text-primary" // active & not home page
+                          : isHomePage
+                            ? "text-white hover:text-black" // not active & home page
+                            : "text-white hover:text-primary" // not active & not home page
+                        }`}
 
                     >
                       <span

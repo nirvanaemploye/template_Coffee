@@ -1,24 +1,30 @@
 import Heroimg from "../../../assets/HomeCompImg/Coffee.png";
 import HeroBg from "../../../assets/HomeCompImg/HomeBg.webp";
+import HeroBgBg from "../../../assets/HomeCompImg/HeroBg.svg";
 import Bnans from "../../../assets/HomeCompImg/Bnanss.png";
 import PrimaryButton from "../../Layout/PrimaryButton";
 import Navbar from "../../Layout/Navbar/Navbar";
 
 const Home = () => {
   return (
-    <section className="container 2xl:px-0 relative text-black z-10">
+    <section className="xl:container 2xl:px-0 relative text-black z-10">
       {/* Background Image */}
       <img
         src={HeroBg}
         alt="Background"
         className="hidden xl:block absolute 2xl:top-0 -top-12 right-0  max-w-2xl 2xl:max-w-none scale-105 2xl:scale-125 2xl:w-5.5/12 2xl:pl-[42rem]"
       />
+      <img
+        src={HeroBgBg}
+        alt="Background"
+        className="xl:hidden h-80 sm:h-auto absolute right-0 top-10 sm:top-12  "
+      />
 
       {/* Navbar */}
       <Navbar className="hover:text-black" />
 
       {/* Main Content */}
-      <div className="container 2xl:pr-0 sm:py-6 2xl:py-12 ">
+      <div className="container 4k:pr-0 sm:py-6 2xl:py-12 ">
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center relative 4k:px-0">
           {/* Text Content Section */}
           <div className=" order-2 sm:order-1 flex flex-col gap-7 2xl:gap-10 ">

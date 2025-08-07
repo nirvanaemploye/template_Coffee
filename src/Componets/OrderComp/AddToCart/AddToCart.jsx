@@ -6,6 +6,7 @@ import { GoPlus } from "react-icons/go";
 import { HiMinus, HiOutlineMinus } from "react-icons/hi";
 import { Link } from "react-router";
 import PrimaryButton from "../../Layout/PrimaryButton";
+import { FiPlus } from "react-icons/fi";
 
 const AddToCart = () => {
   const [cartItems, setCartItems] = useState([
@@ -78,12 +79,12 @@ const AddToCart = () => {
                       >
                         <HiOutlineMinus />
                       </button>
-                      <span className="font-semibold">{item.quantity}</span>
+                      <span className="font-semibold text-lg">{item.quantity}</span>
                       <button
                         onClick={() => handleQuantityChange(item.id, 1)}
                         className="p-2 hover:bg-gray-200 rounded"
                       >
-                        <GoPlus />
+                        <FiPlus />
                       </button>
                     </div>
                   </td>

@@ -84,7 +84,7 @@ const App = () => {
 
             {/* Services Page */}
             <Route
-              path="/services"
+              path="/service"
               element={
                 <>
                   <ServiceHero />
