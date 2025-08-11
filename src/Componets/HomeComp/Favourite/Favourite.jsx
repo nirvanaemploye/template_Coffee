@@ -13,49 +13,49 @@ const FevouriteList = [
   {
     id: 2,
     img: fevcoffee,
-    name: "Caffe Latte",
+    name: "Caffe Mocha",
     description: "Fresh brewed coffee and steamed milk",
     price: "$2.95",
   },
   {
     id: 3,
     img: fevcoffee,
-    name: "Caffe Latte",
+    name: "Caffe Americano",
     description: "Fresh brewed coffee and steamed milk",
     price: "$2.95",
   },
   {
     id: 4,
     img: fevcoffee,
-    name: "Caffe Latte",
+    name: "Caffe cappuccino",
     description: "Fresh brewed coffee and steamed milk",
     price: "$2.95",
   },
   {
     id: 1,
     img: fevcoffee,
-    name: "Caffe Latte",
+    name: "Caffe Cortado",
     description: "Fresh brewed coffee and steamed milk",
     price: "$2.95",
   },
   {
     id: 2,
     img: fevcoffee,
-    name: "Caffe Latte",
+    name: "Caffe Espresso",
     description: "Fresh brewed coffee and steamed milk",
     price: "$2.95",
   },
   {
     id: 3,
     img: fevcoffee,
-    name: "Caffe Latte",
+    name: "Caffe Caramel",
     description: "Fresh brewed coffee and steamed milk",
     price: "$2.95",
   },
   {
     id: 4,
     img: fevcoffee,
-    name: "Caffe Latte",
+    name: "Caffe Hazeinut",
     description: "Fresh brewed coffee and steamed milk",
     price: "$2.95",
   },
@@ -100,7 +100,7 @@ const Favourite = () => {
                       {data.price}
                     </span>
                   </div>
-                  <div className=" h-0.5 bg-primary flex mt-1 w-0 transition-all group-hover:w-full mx-auto max-w-xl"></div>
+                  <div className=" h-[1.3px] bg-primary flex mt-1 w-0 transition-all group-hover:w-full mx-auto max-w-xl"></div>
                 </div>
               </div>
             ))}

@@ -1,14 +1,16 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const navlink = [
   { id: 1, name: "Home", link: "/home" },
   { id: 2, name: "About", link: "/about" },
-  { id: 3, name: "Services", link: "/services" },
+  { id: 3, name: "Service", link: "/service" },
   { id: 4, name: "Contact Us", link: "/contact" },
 ];
 
 const ResponsiveMenu = ({ isOpen, closeMenu }) => {
+  const location = useLocation();
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -32,17 +34,24 @@ const ResponsiveMenu = ({ isOpen, closeMenu }) => {
             className="fixed top-12 left-0 right-0 z-50 bg-primary/90 text-white py-6 shadow-lg xl:hidden"
           >
             <ul className="flex flex-col items-center gap-6 text-lg font-semibold uppercase">
-              {navlink.map(({ id, name, link }) => (
-                <li key={id}>
-                  <Link
-                    to={link}
-                    className="px-6 py-2 hover:text-yellow-300 transition"
-                    onClick={closeMenu}
-                  >
-                    {name}
-                  </Link>
-                </li>
-              ))}
+              {navlink.map(({ id, name, link }) => {
+                const isActive = location.pathname === link;
+                return (
+                  <li key={id}>
+                    <Link
+                      to={link}
+                      onClick={closeMenu}
+                      className={`px-6 py-2 transition ${
+                        isActive
+                          ? "text-secondary" // Active item color
+                          : "hover:text-yellow-300" // Hover color
+                      }`}
+                    >
+                      {name}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </motion.div>
         </>

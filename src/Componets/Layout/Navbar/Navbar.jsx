@@ -15,7 +15,7 @@ const Navbar = ({ className = "" }) => {
   const menus = [
     { id: 1, name: "Home", link: "/home" },
     { id: 2, name: "About", link: "/about" },
-    { id: 3, name: "Services", link: "/service" },
+    { id: 3, name: "Service", link: "/service" },
     { id: 4, name: "Contact Us", link: "/contact" },
   ];
 
@@ -27,7 +27,7 @@ const Navbar = ({ className = "" }) => {
           <Link
             to="/"
             className={`font-bold flex items-end ${isHomePage ? "text-black" : "text-white"
-              } text-lg sm:text-2xl lg:text-3xl tracking-wider leading-3`}
+              } text-lg sm:text-2xl lg:text-[24px] tracking-wider `}
           >
             <img src={logo} alt="logo" className="sm:w-9 w-8 mr-2 " />
             BrewBeans

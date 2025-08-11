@@ -7,7 +7,7 @@ import Navbar from "../../Layout/Navbar/Navbar";
 
 const Home = () => {
   return (
-    <section className="xl:container 2xl:px-0 relative text-black z-10">
+    <section className="md:container 2xl:px-0 relative text-black z-10">
       {/* Background Image */}
       <img
         src={HeroBg}
@@ -69,7 +69,7 @@ const Home = () => {
               data-aos="zoom"
               src={Heroimg}
               alt="Coffee Cup"
-              className="mx-auto spin p-5"
+              className="mx-auto spin p-5 2xl:ml-12"
             />
             
           </div>
