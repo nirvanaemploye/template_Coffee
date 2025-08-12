@@ -27,7 +27,7 @@ const Navbar = ({ className = "" }) => {
           <Link
             to="/"
             className={`font-bold flex items-baseline ${isHomePage ? "text-black" : "text-white"
-              } text-lg md:text-2xl xl:text-[28px] tracking-wide`}
+              } text-lg md:text-[26px] xl:text-[28px] tracking-wide`}
           >
             <img
               src={logo}
