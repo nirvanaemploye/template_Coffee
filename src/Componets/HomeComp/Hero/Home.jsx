@@ -7,7 +7,7 @@ import Navbar from "../../Layout/Navbar/Navbar";
 
 const Home = () => {
   return (
-    <section className="md:container 2xl:px-0 relative text-black z-10">
+    <section className="xl:container 2xl:px-0 relative text-black z-10">
       {/* Background Image */}
       <img
         src={HeroBg}
