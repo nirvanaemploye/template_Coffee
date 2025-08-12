@@ -26,12 +26,17 @@ const Navbar = ({ className = "" }) => {
           {/* Logo */}
           <Link
             to="/"
-            className={`font-bold flex items-end ${isHomePage ? "text-black" : "text-white"
-              } text-lg sm:text-2xl lg:text-[24px] tracking-wider `}
+            className={`font-bold flex items-baseline ${isHomePage ? "text-black" : "text-white"
+              } text-lg sm:text-2xl lg:text-2xl tracking-wide`}
           >
-            <img src={logo} alt="logo" className="sm:w-9 w-8 mr-2 " />
+            <img
+              src={logo}
+              alt="logo"
+              className="sm:w-9 w-7 mr-2 align-middle"
+            />
             BrewBeans
           </Link>
+
 
           {/* Links + Button */}
           <div className="flex items-center gap-2 lg:gap-8">
