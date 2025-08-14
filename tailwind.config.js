@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        custom: ["MyCustomFont", "sans-serif"],
+        custom: ["JamGrotesque", "sans-serif"],
         openSans: ["Open Sans", "sans-serif"],
         cursive: ["Pacifico", "serif"],
       },
