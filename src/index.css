@@ -1,34 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Pacifico&display=swap");
 
-@font-face {
-  font-family: "JamGrotesque";
-  src: url("/fonts/Demo_Fonts/Fontspring-DEMO-jamgrotesque-regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "JamGrotesque";
-  src: url("/fonts/Demo_Fonts/Fontspring-DEMO-jamgrotesque-bold.otf") format("opentype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "JamGrotesque";
-  src: url("/fonts/Demo_Fonts/Fontspring-DEMO-jamgrotesque-light.otf") format("opentype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "JamGrotesque";
-  src: url("/fonts/Demo_Fonts/Fontspring-DEMO-jamgrotesque-medium.otf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
