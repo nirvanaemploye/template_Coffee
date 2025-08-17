@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BrewBeans – Documentation</title>
+  <style>
+    :root{
+      --brand:#6b3e2e; /* coffee brown */
+      --accent:#c19a6b; /* latte */
+      --ink:#2a2a2a;
+      --muted:#6b7280;
+      --bg:#faf8f6;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:var(--bg);color:var(--ink);line-height:1.65}
+    header{background:linear-gradient(90deg,var(--brand),#3a1f16);color:#fff;padding:40px 20px;text-align:center}
+    header h1{margin:0 0 6px;font-size:34px;letter-spacing:.3px}
+    header p{margin:0;color:#e7e7e7}
+    main{max-width:1024px;margin:24px auto;padding:0 20px}
+    .card{background:#fff;border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,.06);padding:22px;margin:14px 0}
+    h2{margin:0 0 10px;color:var(--brand)}
+    h3{margin:24px 0 8px;color:#3a2b24}
+    code,kbd,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+    pre{background:#111827;color:#e5e7eb;border-radius:12px;padding:14px;overflow:auto}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+    .badge{display:inline-block;padding:2px 8px;border-radius:999px;background:var(--accent);color:#2b211b;font-weight:600;font-size:12px}
+    .kbd{border:1px solid #d1d5db;border-bottom-width:2px;border-radius:6px;padding:.1rem .35rem;background:#f9fafb}
+    ul{margin:8px 0 8px 20px}
+    a{color:#824a34}
+    .note{border-left:4px solid var(--accent);background:#fff8f0;padding:12px;border-radius:8px}
+    details{background:#fff;border-radius:14px;padding:14px;margin-top:8px}
+    summary{cursor:pointer;font-weight:700;color:#3a2b24}
+    footer{padding:40px 20px;text-align:center;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BrewBeans – Coffee Shop React Website Template</h1>
+    <p>Documentation • Version 1.0 • Author: <span class="badge">HitNHammer Tech</span></p>
+  </header>
+
+  <main>
+    <!-- 1. Overview -->
+    <section class="card" id="overview">
+      <h2>1) Overview</h2>
+      <p><strong>BrewBeans</strong> is a premium, fully responsive React website template designed with coffee lovers in mind. Perfect for cafes, coffee roasters, beverage brands, or any food & drink business, this template delivers both style and functionality.</p>
+
+      <p>It includes five essential pages — <em>Home</em>, <em>About</em>, <em>Services</em>, <em>Contact Us</em>, and <em>Order</em> — each carefully crafted with a clean, modern layout that adapts beautifully to all devices.</p>
+
+      <p>The <strong>Home</strong> page grabs attention with a bold hero header, tells your story in the <em>How We Made Coffee</em> section, tempts visitors with a <em>Favourite Coffee Flavours</em> showcase, builds trust with customer testimonials, and features extra promotional blocks to highlight offers or events.</p>
+
+      <p>Built with <strong>React 18+</strong> and <strong>Vite</strong> for lightning-fast performance, styled with <strong>Tailwind CSS</strong> and enhanced with <strong>AOS animations</strong>, <strong>React Slick sliders</strong>, and <strong>Google Maps integration</strong> — BrewBeans ensures your online presence looks professional, interactive, and engaging.</p>
+
+    </section>
+
+    <!-- 2. Features -->
+    <section class="card" id="features">
+      <h2>2) Key Features</h2>
+      <ul>
+        <li>Built with <strong>React 18+</strong> using functional components & hooks</li>
+        <li>Fast development & build with <strong>Vite</strong></li>
+        <li>Clean, modern coffee-brand aesthetic — perfect for cafés & coffee shops</li>
+        <li>Fully responsive design with <strong>HTML5</strong> + <strong>Tailwind CSS</strong></li>
+        <li>Smooth scroll animations powered by <strong>AOS (Animate on Scroll)</strong></li>
+        <li>Uses both <strong>PNG</strong> & <strong>SVG</strong> images for high-quality visuals</li>
+        <li>Reusable components for all sections (Hero, Story, Flavours, Testimonials, etc.)</li>
+        <li>Typography with <strong>Pacifico</strong> & <strong>Sans-Serif</strong> fonts</li>
+        <li>Integrated <strong>React Icons</strong> and other popular icon libraries</li>
+        <li><strong>React Slick Slider</strong> for testimonials & product carousels</li>
+        <li><strong>Google Maps Integration</strong> for location display</li>
+        <li>Easy customization with clearly structured code & comments</li>
+        <li>Intuitive UI/UX design for seamless navigation</li>
+        <li>Built with the latest React features and styled for speed & scalability</li>
+        <li>SEO-ready meta tags & semantic HTML</li>
+    </section>
+
+    <!-- 3. Requirements -->
+    <section class="card" id="requirements">
+      <h2>3) Requirements</h2>
+      <ul>
+        <li>Node.js v18+ and npm (or yarn / pnpm)</li>
+        <li>Git (optional) for version control</li>
+        <li>Modern browsers (Chrome, Firefox, Edge, Safari)</li>
+      </ul>
+    </section>
+
+
+    <!-- 4. Getting Started -->
+    <section class="card" id="start">
+      <h2>4) Getting Started</h2>
+      <h3>Installation</h3>
+      <pre><code># 1) Install dependencies
+npm install
+
+# 2) Start development server
+npm start
+
+# 3) Build optimized production bundle
+npm run build
+</code></pre>
+      <h3>Scripts (package.json)</h3>
+      <pre><code>{
+  "scripts": {
+    "start": "react-scripts start",          // or vite: vite
+    "build": "react-scripts build",          // or vite: vite build
+    "preview": "vite preview",               // if using Vite
+    "lint": "eslint src --ext .js,.jsx"      // optional
+  }
+}
+</code></pre>
+      <p class="note">If you use Vite instead of CRA, ensure the scripts reflect that. Buyers should follow the commands listed in your <code>package.json</code>.</p>
+    </section>
+
+    <!-- 5. Assets & Credits -->
+    <section class="card" id="assets">
+      <h2>5) Assets & Credits</h2>
+      <ul>
+        <li>Images: use your own or free stock (Unsplash/Pexels). Confirm licenses.</li>
+        <li>Icons: Font Awesome / custom SVGs.</li>
+        <li>Fonts: Google Fonts (e.g., Inter, Playfair Display for headings).</li>
+      </ul>
+    </section>
+
+    <!-- 6. Changelog -->
+    <section class="card" id="changelog">
+      <h2>6) Changelog</h2>
+      <ul>
+        <li><strong>v1.0</strong> – Initial release: 5 pages, 4 home sections, basic styles, docs.</li>
+      </ul>
+    </section>
+
+    <!-- 7. Support -->
+    <section class="card" id="support">
+      <h2>7) Support</h2>
+      <p>Email: <strong>hitnhammercoder@gmail.com</strong> • Support hours: Mon–Fri, 10:00–18:00 IST</p>
+      <p>What’s included: bug fixes, small guidance, updates. What’s not: custom features, server setup, or non-template code.</p>
+    </section>
+
+    <!-- 8. License Note -->
+    <section class="card" id="license">
+      <h2>8) License Note</h2>
+      <p>BrewBeans is sold under Envato licenses. Buyers may use it in one end product per license. Redistribution or reselling the template itself is not allowed.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2025 HitNHammer Tech. Built with ❤️ for coffee lovers.
+  </footer>
+</body>
+</html>
