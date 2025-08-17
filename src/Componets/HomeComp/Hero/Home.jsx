@@ -38,7 +38,7 @@ const Home = () => {
               data-aos="zoom-in"
               data-aos-delay="300"
               data-aos-duration="100"
-              className="text-4xl sm:text-4xl lg:text-5xl 2xl:text-7xl font-bold"
+              className="text-4xl sm:text-4xl lg:text-6xl 2xl:text-7xl font-black"
             >
               We serve the richest{" "}
               <span
