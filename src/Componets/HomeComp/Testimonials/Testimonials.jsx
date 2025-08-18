@@ -1,13 +1,13 @@
 import Slider from "react-slick";
-import dhruv from "../../../assets/HomeCompImg/Dhruv.png";
+import dhruv from "../../../assets/HomeCompImg/Dhruv.svg";
 import { AiFillGoogleCircle } from "react-icons/ai";
 import { MdFacebook } from "react-icons/md";
 import { RiWhatsappFill } from "react-icons/ri";
 import BaseLine from "../../Layout/BaseLine";
-import VectorN from "../../../assets/HomeCompImg/TestimonialsImg/VectorN.png";
-import VectorH from "../../../assets/HomeCompImg/TestimonialsImg/VectorH.png";
-import invertedcommasN from "../../../assets/HomeCompImg/TestimonialsImg/invertedcommasN.png";
-import invertedcommasH from "../../../assets/HomeCompImg/TestimonialsImg/invertedcommasH.png";
+import VectorN from "../../../assets/HomeCompImg/TestimonialsImg/VectorN.svg";
+import VectorH from "../../../assets/HomeCompImg/TestimonialsImg/VectorH.svg";
+import invertedcommasN from "../../../assets/HomeCompImg/TestimonialsImg/invertedcommasN.svg";
+import invertedcommasH from "../../../assets/HomeCompImg/TestimonialsImg/invertedcommasH.svg";
 import { a } from "motion/react-client";
 
 // Testimonial Data
