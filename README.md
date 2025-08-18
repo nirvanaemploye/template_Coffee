@@ -72,7 +72,7 @@ Before you begin, make sure you have installed:
 ## Customization
 - All styles are managed via Tailwind CSS classes and config in tailwind.config.js.
 
-- Fonts are loaded via Google Fonts in index.html.
+- Fonts are loaded via Google Fonts in index.css.
 
 - Images are located in the /assets folder.
 
