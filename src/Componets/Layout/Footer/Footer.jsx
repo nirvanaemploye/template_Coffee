@@ -1,5 +1,5 @@
 import footerBg from "../../../assets/Footer.png"
-import logo from "../../../assets/Logo.png"
+import logo from "../../../assets/Logo.svg"
 import { AiFillGoogleCircle, AiFillTwitterCircle } from "react-icons/ai";
 import { IoMdCall } from "react-icons/io";
 import { MdEmail, MdFacebook, MdKeyboardArrowRight, MdLocationOn } from "react-icons/md";

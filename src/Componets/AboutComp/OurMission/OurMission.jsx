@@ -1,7 +1,6 @@
 import CoffeeCup from "../../../assets/AboutCompImg/Mission.png";
 import PrimaryButton from "../../Layout/PrimaryButton";
-import Circal from "../../../assets/HomeCompImg/HowMade/Ellipse2.png";
-
+import Circal from "../../../assets/HomeCompImg/HowMade/Ellipse2.svg";
 const OurMission = () => {
   return (
     <section className="py-12 sm:py-32">

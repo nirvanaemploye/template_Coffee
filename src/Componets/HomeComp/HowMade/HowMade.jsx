@@ -1,11 +1,11 @@
 import leaves from "../../../assets/HomeCompImg/HowMade/sketch.png";
-import CircalOut from "../../../assets/HomeCompImg/HowMade/Ellipse2.png";
-import CircalIn from "../../../assets/HomeCompImg/HowMade/Ellipse1.png";
-import CoffeeCup from "../../../assets/HomeCompImg/HowMade/CoffeeCup.png";
-import Made1 from "../../../assets/HomeCompImg/HowMade/coffeemachine.png";
-import Made2 from "../../../assets/HomeCompImg/HowMade/coff.png";
-import Made3 from "../../../assets/Logo.png";
-import Made4 from "../../../assets/HomeCompImg/HowMade/HeandBnans.png";
+import CircalOut from "../../../assets/HomeCompImg/HowMade/Ellipse2.svg";
+import CircalIn from "../../../assets/HomeCompImg/HowMade/Ellipse1.svg";
+import CoffeeCup from "../../../assets/HomeCompImg/HowMade/CoffeeCup.webp";
+import Made1 from "../../../assets/HomeCompImg/HowMade/coffeemachine.svg";
+import Made2 from "../../../assets/HomeCompImg/HowMade/coff.svg";
+import Made3 from "../../../assets/Logo.svg";
+import Made4 from "../../../assets/HomeCompImg/HowMade/HeandBnans.svg";
 import BaseLine from "../../Layout/BaseLine";
 import { motion } from "motion/react";
 

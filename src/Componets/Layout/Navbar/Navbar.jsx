@@ -1,7 +1,7 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
-import logo from "../../../assets/Logo.png";
-import ShopLogo from "../../../assets/OrderLogo.png";
+import logo from "../../../assets/Logo.svg";
+import ShopLogo from "../../../assets/OrderLogo.svg";
 import { useState } from "react";
 import ResponsiveMenu from "./ResponsiveMenu";
 import { CgMenuOreos } from "react-icons/cg";
