@@ -29,7 +29,7 @@ const Footer = () => {
         <div data-aos="fade" className="grid grid-cols-1 lg:grid-cols-3 gap-y-8 ">
           {/* Socical Links  */}
           <div className="xl:space-y-12 space-y-6">
-            <h1 className="font-semibold text-2xl md:text-3xl flex items-baseline gap-x-3 mt-auto treacking-3"><span><img src={logo} alt="" className="sm:w-12 w-9" /></span>BrewBeans</h1>
+            <h1 className="font-semibold text-2xl md:text-3xl flex items-baseline gap-x-3 mt-auto treacking-3"><span><img src={logo} alt="" className="sm:w-10 w-10" /></span>BrewBeans</h1>
             <p className="xl:text-xl text-md tracking-widest text-gray-50 font-normal">
               Lorem ipsum dolor sit amet, consectetur adipisc
               pulvinar ligula hendrerit, blandit arcu vitae,rutrum  Vestibulum a sem in sapien malesuada consequat.
