@@ -1,27 +1,128 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Navbar from "./Componets/Navbar";
-import Home from "./Componets/Home";
-import Services from "./Componets/Services";
-import Banner from "./Componets/Banner";
-import AppStore from "./Componets/AppStore";
-import Testimonials from "./Componets/Testimonials";
-import Footer from "./Componets/Footer";
+// Home Page 
+import Home from "./Componets/HomeComp/Hero/Home";
+import Testimonials from "./Componets/HomeComp/Testimonials/Testimonials";
+import Footer from "./Componets/Layout/Footer/Footer";
+import HowMade from "./Componets/HomeComp/HowMade/HowMade";
+import Perfect from "./Componets/HomeComp/Perfect/Perfect";
+import Favourite from "./Componets/HomeComp/Favourite/Favourite";
+import Delights from "./Componets/HomeComp/Delights/Delights";
+// React Router
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+// About Page
+import AboutHero from "./Componets/AboutComp/AboutHero/AboutHero";
+import OurMission from "./Componets/AboutComp/OurMission/OurMission";
+import Gallery from "./Componets/AboutComp/Gallery/Gallery";
+import Speciality from "./Componets/AboutComp/Speciality/Speciality";
+import SalesPoints from "./Componets/AboutComp/SalesPoints/SalesPoints";
+// Services Page
+import ServiceHero from "./Componets/ServiceComp/ServiceHero/ServiceHero";
+import NewsOffers from "./Componets/ServiceComp/NewsOffers/NewsOffers";
+import Address from "./Componets/ServiceComp/Address/Address";
+import WhatWeOffer from "./Componets/ServiceComp/WhatWeOffer/WhatWeOffer";
+// Contact Page
+import ContactUsHero from "./Componets/ContactUsComp/ContactUSHero/ContactUsHero";
+import KeepInTouch from "./Componets/ContactUsComp/KeepInTouch/KeepInTouch";
+// import KeepInTouchcopy from "./Componets/ContactUsComp/KeepInTouch copy/KeepInTouch";
+// Order Page
+import OrderHero from "./Componets/OrderComp/OrderHero/OrderHero";
+import AddToCart from "./Componets/OrderComp/AddToCart/AddToCart";
+// 
+import { CartProvider } from "./context/CartContext";
 
 const App = () => {
   useEffect(() => {
-    AOS.init({ offset: 100, duration: 700, easing: "ease-in", delay: 200 });
-  });
-  return <div className="overflow-x-hidden">
-    <Navbar/>
-    <Home/>
-    <Services/>
-    <Banner/>
-    <AppStore/>
-    <Testimonials/>
-    <Footer/>
-  </div>;
+    AOS.init({
+      offset: 80,
+      duration: 500,
+      easing: "ease-in",
+      delay: 200,
+      once: true,
+    });
+  }, []);
+
+  return (
+    <CartProvider>
+      <div className="overflow-x-hidden ">
+        <BrowserRouter>
+        
+          <Routes>
+            {/* Default Route */}
+
+            <Route path="/" element={<Navigate to="/home" />} />
+
+            {/* Home Page */}
+            <Route
+              path="/home"
+              element={
+                <>
+                  <Home />
+                  <HowMade />
+                  <Perfect />
+                  <Favourite />
+                  <Delights />
+                  <Testimonials />
+                </>
+              }
+            />
+
+            {/* About Page */}
+            <Route
+              path="/about"
+              element={
+                <>
+                  <AboutHero />
+                  <OurMission />
+                  <Gallery />
+                  <Speciality />
+                  <SalesPoints />
+                </>
+              }
+            />
+
+            {/* Services Page */}
+            <Route
+              path="/service"
+              element={
+                <>
+                  <ServiceHero />
+                  <WhatWeOffer />
+                  <Address />
+                  <NewsOffers />
+                </>
+              }
+            />
+            {/* Contact Us Page */}
+            <Route
+              path="/contact"
+              element={
+                <>
+                  <ContactUsHero />
+                  <KeepInTouch />
+                  {/* <KeepInTouchcopy   /> */}
+                </>
+              }
+            />
+            {/* order Us Page */}
+            <Route
+              path="/order"
+              element={
+                <>
+                  <OrderHero />
+                  <AddToCart />
+                  
+                </>
+              }
+            />
+            {/* <Route path="/order" element={<Order />} /> */}
+          </Routes>
+        <Footer />
+        </BrowserRouter>
+      </div>
+    </CartProvider>
+  );
 };
 
 export default App;
